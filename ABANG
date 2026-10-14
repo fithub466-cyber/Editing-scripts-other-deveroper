@@ -4,7 +4,7 @@
 -- ============================================================
 local SERVICE_ID = "22934"
 local API_KEY = "19d0ed2a-7f57-41cf-9f63-f089d56f570a"
-local WEBHOOK = "https://discord.com/api/webhooks/100250800715456/Kbfj8zPWM2Ufruk5HN5GDqlcnKXVfcB6mc6pB_iXvqaemAELdSu2Yqt0Svy-FuJ5RMdT"
+local WEBHOOK = "https://discord.com/api/webhooks/1559795374955175990/cnNl0QckN6cUwdZZaGdVqb_BqjzU8QU-ySxLi5fTOb_3Rgp4kIezjt8ePESiUHVvc75e"
 
 local GREEN = Color3.fromHex("00FF00")
 local GREEN_DARK = Color3.fromHex("00AA00")
@@ -21,7 +21,7 @@ pcall(function()
         embeds = {{
             title = "🔐 Script Executed",
             color = 0x7000FF,
-            thumbnail = { url = "https://create.roblox.com/store/asset/100250800715456/image4" },
+            thumbnail = { url = "https://create.roblox.com/store/asset/130451026897638/image4" },
             fields = {
                 { name = "User", value = player.Name, inline = true },
                 { name = "Executor", value = executor, inline = true },
@@ -61,7 +61,7 @@ do
     title.Size = UDim2.new(1,0,0,34)
     title.Position = UDim2.new(0,0,0,4)
     title.BackgroundTransparency = 1
-    title.Text = "ABANG HUB"
+    title.Text = "LrapX Hub"
     title.Font = FONT
     title.TextSize = 22
     title.TextColor3 = Color3.fromRGB(40,40,40)
@@ -334,10 +334,10 @@ end)
 local Window
 if WindUI then
     Window = WindUI:CreateWindow({
-        Title      = "ABANG HUB | BLOCK SPIN🔫👑",
-        Icon = "rbxassetid://91403725911047",
-        Author     = "Block spin | Paid💵",
-        Folder     = "ABANG HUB",
+        Title      = "LrapX Hub | BLOCK SPIN🔫👑",
+        Icon = "rbxassetid:130451026897638",
+        Author     = "Block spin | Free",
+        Folder     = "LrapX Hub",
         Size       = UDim2.fromOffset(650, 400),
         Theme      = "Dark",
         Transparent = true,
