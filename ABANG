@@ -640,7 +640,7 @@ else
     corner.CornerRadius = UDim.new(1, 0)
     corner.Parent = fovCircle
     local stroke = Instance.new("UIStroke")
-    stroke.Color = GREEN
+    stroke.Color = write
     stroke.Thickness = 2
     stroke.Transparency = 0.2
     stroke.Parent = fovCircle
@@ -883,7 +883,7 @@ RunService.RenderStepped:Connect(function()
                     local angle2 = math.rad(i * (360 / fovCircle._segments))
                     fovCircle._lines[i].From = Center + Vector2.new(math.cos(angle1) * fovRadius, math.sin(angle1) * fovRadius)
                     fovCircle._lines[i].To   = Center + Vector2.new(math.cos(angle2) * fovRadius, math.sin(angle2) * fovRadius)
-                    fovCircle._lines[i].Color = GREEN
+                    fovCircle._lines[i].Color = write
                     fovCircle._lines[i].Visible = silentAimEnabled
                 end
             end
@@ -903,8 +903,8 @@ RunService.RenderStepped:Connect(function()
                     redLine.Visible = true
                     redLine.From = center
                     redLine.To = Vector2.new(screenPos.X, screenPos.Y)
-                    redLine.Color = GREEN
-                    redLine.Thickness = 1.3
+                    redLine.Color = yellow
+                    redLine.Thickness = 0.5
                 else
                     redLine.Visible = false
                     smoothTarget = Vector3.new()
